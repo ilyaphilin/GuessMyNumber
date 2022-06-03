@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+/* background: linear-gradient(to top left, #28b487, #7dd56f); */
+
+.wrapper {
+  height: 97vh;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  color: rgb(255, 255, 255);
+  font-family: 'Press Start 2P';
+  background: linear-gradient(to top left, #201010, #181818);
+  /* background: linear-gradient(to top left, #002008, #002206); */
+}
+
+.restart {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.restart button {
+  color: #262626;
+}
+
+header h1 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 40px;
+}
+
+header .questionMark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 10px;
+  border-bottom-style: solid;
+  /* width: 2000%;
+  margin-left: -950%; */
+}
+
+header .questionMark p {
+  width: 170px;
+  height: 100px;
+  font-size: 70px;
+  margin-top: 20px;
+  margin-bottom: -50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  color: #262626;
+}
+
+main {
+  margin-top: 95px;
+  display: flex;
+  justify-content: space-around;
+}
+
+main .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .right {
+  width: 315px;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+main .left input {
+  width: 200px;
+  height: 80px;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  /* background-color: #262626; */
+  background-color: rgba(0, 0, 0, 0.15);
+  border: 3px solid white;
+}
+
+main .left button {
+  width: 150px;
+  padding: 15px;
+  color: #262626;
+  margin-top: 30px;
+}
+
+main .right .message {
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+@media only screen and (max-device-width: 719px) {
+  .wrapper {
+    padding: 0;
+  }
+  .restart {
+    justify-content: space-around;
+  }
+  header h1 {
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  header .questionMark p {
+    margin-top: 0px;
+  }
+  main {
+    margin-top: 70px;
+  }
+  main .right {
+    width: 261px;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-device-width: 499px) {
+  main .left {
+    margin-top: -20px;
+  }
+  main .left input {
+    width: 110px;
+  }
+  main .left button {
+    width: 120px;
+  }
+  main .right {
+    margin-left: 10px;
+    font-size: 13px;
+  }
+  main .right .message {
+    margin-bottom: 10px;
+  }
+}
