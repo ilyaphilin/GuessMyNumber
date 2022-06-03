@@ -1,2 +1,0 @@
-# GuessMyNumber
-ilyaphilin.github.io
